@@ -1,0 +1,96 @@
+body{
+  background-image: url("back2.jpg");
+  background-repeat: repeat;
+  border: 1px solid black;
+  margin-left: 10px;
+  font-family: "Helvetica", serif;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+h2{
+  background-color: rgb(81, 92, 139);
+  text-align: center;
+  padding: 14px;
+}
+
+.photo{
+  float: left;
+  position: fixed;
+  top: 20px;
+  margin: 20px;
+}
+
+.header-type{
+  width: 69%;
+  float: right;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 350px;
+  border: 1px solid darkcyan;
+}
+
+.left-side{
+  float: left;
+  padding-left: 20px;
+  line-height: 2em;
+}
+
+.right-side{
+  text-align: right;
+  margin-top: 80px;
+  padding-left: 40px;
+  line-height: 2em;
+}
+
+.navbar{
+  float: left;
+  position: fixed;
+  border: 1px solid darkcyan;
+  width: 21%;
+  margin-top: 220px;
+  margin-left: 20px;
+  font-family: "cursive";
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+}
+
+li a{
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(103, 168, 157);
+  color: white;
+}
+
+li a:active{
+  color:black;
+}
+
+#text{
+  width: 70%;
+  font-size: 24px;
+  margin-top: 380px;
+  margin-left: 350px;
+  text-align: justify;
+  border-left: 1px solid darkcyan;
+  border-right: 1px solid darkcyan;
+}
+
+.intendation{
+  padding-left: 100px;
+}
+
+.section-bottom{
+  background-color: rgb(81, 92, 139);
+  padding: 6px;
+  padding-left: 80px;
+}
