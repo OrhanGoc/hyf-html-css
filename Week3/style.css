@@ -3,9 +3,12 @@
   box-sizing:border-box;
 }
 body {
+    
     font-family: Roboto, sans-serif;
     text-decoration: none;
     box-sizing: border-box;
+    color:#757575;
+    background-color: #f5f5f5;
 }
   
 .header-top {
@@ -159,7 +162,6 @@ i {
   box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,.11);
   transition: box-shadow .2s cubic-bezier(.4,0,.2,1);
   background-color: #fff;
-  border: 1px solid black;
   margin: 10px;
 }
 
@@ -178,8 +180,9 @@ i {
   max-width: 100%;
   color: #fff;
   text-align: left;
-  line-height: 2rem;
-  font-size: 1.2rem;
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .grid-item__small{
@@ -187,14 +190,12 @@ i {
   box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,.11);
   transition: box-shadow .2s cubic-bezier(.4,0,.2,1);
   background-color: #fff;
-  border: 1px solid black;
   margin: 10px;
-
+  border: 1px solid black;
 }
 
 .grid-item__small a {
   display:flex;
-
 }
 
 .grid-item__small img{
@@ -217,6 +218,8 @@ i {
   max-width: 20px;
 }
 
+.navigation_section {width:100%;}
+
 .navigation_list{
   list-style: none;
   margin-left: 0px;
@@ -234,38 +237,41 @@ i {
   flex-wrap: wrap;
 }
 
-.card {
-  width:100%;
-}
-
 .grid-item__tools{
-  border: 1px;
   box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,.11);
   transition: box-shadow .2s cubic-bezier(.4,0,.2,1);
-  padding: 6px;  
   background-color: #fff;
   max-width: 100%;
   margin: 10px;
   width:100%;
 }
 
+.grid-item__tools a {display:flex;}
+
 .card__image img{
- width:100%;
-  
+ width:100%; 
+}
+
+.grid-item__tools .card__text {
+  width:67%;
+  color: #757575;
+  padding:0px 12px;
 }
 
 .card__image {
   margin:auto;
+  width:33%;
 }
 
-.card__footer{
+.grid-item__tools .card__footer{
   font-weight: bold;
+  color: blue;
 }
 
 .tools-button{
   position: relative;
   display: inline-block;
-  margin-left: 40%;
+  margin-left: 42%;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color:#3367d6;
@@ -283,8 +289,8 @@ i {
   box-sizing: border-box;
   background-color:#3367d6;
   color: white; 
-  margin: 50px 0px 24px 0px;
-  padding: 12px;
+  margin: 80px 0px 1px 0px;
+  padding: 36px 12px;
 }
 
 .subscribe-inline__box{
@@ -294,18 +300,19 @@ i {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 3px;
-  padding: 12px;
+  padding: 12px ;
+  font-size: 14px;
 }
 
 .global-footer-nav{
   position: relative;
-  height: 240px;
-  box-sizing: border-box;
+  height: 120px;
   background-color:#3367d6;
+  padding-top: 24px;
+  padding-left: 24px;
 }
 
 .global-footer-nav a{
-  text-decoration: none;
   color: white;
   padding:12px;
 }
@@ -340,7 +347,26 @@ i {
     width: calc(100% / 2 - 20px);
   }
 
+  .navigation_section {
+    float:left;
+    width:50%;
+  }
+
+  .grid-item__tools a {display:block;}
+
+  .grid-item__tools .card__text {
+    width:100%;
+  }
   
+  .card__image {
+    margin:auto;
+    width:100%;
+  }
+
+  .subscribe-inline{
+    padding-left: 10%;
+    padding-right: 30%;
+  }
 
 }
 
@@ -356,20 +382,11 @@ i {
   }
 
   .header__text1{    
-    margin-top: 120px;
     margin-left: 100px;
-    color:rgb(99, 96, 96);
   }
 
   .header__text2{
     display: block;
-  }
-
-  .header__text-right{
-    float: right;
-    margin-top: -40px;
-    margin-right: 40px;
-    font-weight: bold;
   }
 
   .header__text-left{
@@ -381,19 +398,27 @@ i {
   .subscribe-button {
     display: inline-block;
     background-color:#3367d6;
+    color:white;
     margin-top: 10px;
-    font-size: 14px;
-    padding: 12px;
     border-radius: 3px;
+    padding: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
   }
 
-  .subscribe-button a{
-    color: white;
+  .header__text-right{
+    float: right;
+    margin-top: -60px;
+    margin-right: 40px;
+    font-weight: 500;
+    color: blue;
+    line-height: 1.6;
   }
 
   .navigation_sections {
     display:flex;
-    width:100%;
+    
   }
 
   .navigation_section {
@@ -402,7 +427,7 @@ i {
 
   .page-section__title{
     display: block;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .grid-item__large{
@@ -415,7 +440,6 @@ i {
 
   .grid-item__tools{
     width:calc(25% - 20px);
-    
   }
 
   .card__image img {
@@ -427,14 +451,27 @@ i {
   .grid-item__small a {
     display:block;
     text-align: center;
-
   }
 
   .grid-item__small .card__text {
     width:100%;
   }
 
+  .grid-item__tools a {display:block;}
 
+  .grid-item__tools .card__text {
+    width:100%;
+  }
+  
+  .card__image {
+    margin:auto;
+    width:100%;
+  }
+
+  .subscribe-inline{
+    padding-left: 10%;
+    padding-right: 30%;
+  }
 }
 
 
